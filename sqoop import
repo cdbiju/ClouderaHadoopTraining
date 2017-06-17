@@ -1,0 +1,11 @@
+sqoop import \
+--connect jdbc:mysql://localhost/sourcedb \
+--username root \
+--table customer \
+--target-dir /user/cloudera/sourcedata/ \
+--password cloudera \
+--m 1
+
+hdfs dfs -ls /user/cloudera/sourcedata/
+
+hdfs dfs -cat /user/cloudera/sourcedata/part-m-00000
