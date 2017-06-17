@@ -1,0 +1,20 @@
+hive 
+
+show databases;
+
+create database training;
+
+use training;
+
+CREATE EXTERNAL TABLE customer ( id INT, name STRING,address STRING)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LOCATION '/user/cloudera/sourcedata/';
+
+show tables;
+
+select * from customer;
+
+select * from customer where name='Alex';
+
+drop table customer;
