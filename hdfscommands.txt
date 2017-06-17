@@ -1,0 +1,19 @@
+Basic HDFS Commands
+-------------------
+
+
+hdfs dfs -ls /user/cloudera/
+
+hdfs dfs -mkdir -p /user/cloudera/training/
+
+hdfs dfs -ls /user/cloudera/training/
+
+// create a sample text file sample.txt and enter some text into it.
+
+hdfs dfs -put sample.txt /user/cloudera/training/
+
+hdfs dfs -cat /user/cloudera/training/sample.txt
+
+hdfs dfs -get /user/cloudera/training/sample.txt samplefromhdfstolocal.txt
+
+hdfs dfs -rm /user/cloudera/training/sample.txt
