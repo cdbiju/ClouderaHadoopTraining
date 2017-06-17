@@ -1,0 +1,12 @@
+
+mysql -u root -pcloudera
+
+show databases;
+
+create database sourcedb;
+
+insert into customer values(1,'John','200 Street Band Street Sydney');
+
+insert into customer values(2,'Alex','200 Street Band Street Canberra');
+
+select * from customer;
