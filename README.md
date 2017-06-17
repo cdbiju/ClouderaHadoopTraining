@@ -2,6 +2,8 @@
 
 This repository contains hadoop snippets required to perform basic hadoop operations with HDFS,Java Map Reduce,Sqoop & Hive.
 
+Setup Cloudera VM by following the instruction in Cloudera VM instructions.docx
+
 Below steps can be followed with respective instruction files in this repository
 1. Basic HDFS Commands 
 2. Setup source db in MySQL with sample data
